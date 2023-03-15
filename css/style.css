@@ -379,8 +379,15 @@ nav ul li a:visited:not(:only-child):after {
     background-color: #BC222A;
 }
 
+.slick-slide .img{
+    width: 100%;
+    height: 100%;
+}
+
 .slick-slide img {
     width: 100%;
+    height:100%;
+    object-fit: cover;
 }
 
 
@@ -1862,6 +1869,7 @@ ul.tabs li.current {
 
 .contact_wrap {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact_input {
@@ -1874,6 +1882,7 @@ ul.tabs li.current {
     padding: 18px 20px;
     border: 1px solid #DADADA;
     border-radius: 6px;
+    box-sizing: border-box;
 }
 
 .contact_input textarea {
@@ -1882,6 +1891,7 @@ ul.tabs li.current {
     border: 1px solid #DADADA;
     border-radius: 6px;
     padding: 18px 20px;
+    box-sizing: border-box;
 }
 
 
@@ -1927,6 +1937,7 @@ ul.tabs li.current {
 .location_display {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .location_info {
@@ -1991,6 +2002,22 @@ ul.tabs li.current {
 
     .mobile_padding {
         padding: 0 20px;
+    }
+
+    .mobile_mt-24{
+        margin-top: 24px;
+    }
+
+    .mobile_mb-24{
+        margin-bottom: 24px;
+    }
+
+    .mobile_mt-30{
+        margin-top: 30px;
+    }
+
+    .mobile_mb-30{
+        margin-bottom: 30px;
     }
 
     .mobile_mt-42 {
@@ -2651,7 +2678,8 @@ ul.tabs li.current {
 
 
 
-    .sub_digital, .sub_program,.commerce_app{
+    .sub_digital, .sub_program,.commerce_app,
+    .news_wrap,.contact_wrap{
         padding: 0 20px;
         box-sizing: border-box;
     }
@@ -2991,6 +3019,92 @@ height: 150px;
 
     .tab_all_img{
         height: 250px;
+    }
+
+
+    /* news */
+
+    .media_wrap ul{
+        flex-direction: column;
+    }
+
+    .media_wrap li{
+        width: 100%;
+    }
+
+    .media_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .media_title{
+        font-size: 14px;
+    }
+
+    .media_descript{
+        font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+margin-top: 5px;
+    }
+
+    .contact_input{
+    margin-left: 0;
+    }
+
+    .contact_select{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contact_wrap .nice-select{
+        width: 100%;
+    }
+
+    .btn.contact_btn{
+        width: 128px;
+        height: 30px;
+        font-weight: 500;
+font-size: 14px;
+    }
+
+    .root_daum_roughmap{
+        width: 360px;
+height: 216px;
+    }
+
+    .location_info{
+        margin-left: 0;
+        padding: 20px 30px;
+        width: 100%;
+    }
+
+    .location_name{
+        font-size: 14px;
+        flex: 0 0 22%;
+        line-height: unset;
+    }
+
+    .adress{
+        font-size: 14px;
+line-height: 20px;
+    }
+
+    .location_adress{
+        margin-bottom: 10px;
+    }
+
+    .location_mail {
+        margin-bottom: 10px;
+    }
+
+    .location_title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #location{
+        margin-bottom: 61px;
     }
 }
 
