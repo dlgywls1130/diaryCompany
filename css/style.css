@@ -2068,6 +2068,8 @@ padding-top: 13px;
 display: flex;
 align-items: center;
 margin: 30px 0;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .modal_effect li{
@@ -2102,6 +2104,7 @@ color: #333333;
 .content_order{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .content_order .conntent_turn{
@@ -3505,6 +3508,56 @@ letter-spacing: -0.02em;
         row-gap: 10px;
         padding: 0 20px;
         column-gap: 20px;
+    }
+
+
+
+
+    .modal-content{
+        width: 100%;
+    }
+
+    .moadal_head{
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .modal_title{
+        font-size: 20px;
+    }
+
+    .modal_wrapp {
+        padding: 30px;
+    }
+
+    .modal_content-title{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .modal_descript{
+        font-size: 14px;
+        line-height: 25px;
+        margin: 15px 0 20px;
+    }
+
+    .modal_arrow {
+        margin: 24px 0;
+        transform: rotate(90deg);
+    }
+
+    .modal_effect li{
+        margin-bottom: 15px;
+        margin-right: 0;
+    } 
+
+    .modal_effect li:last-child{
+        margin-bottom: 10;
+    } 
+
+    .modal_gluet_ul{
+        flex-direction: column;
+        background: none;
     }
 }
 
