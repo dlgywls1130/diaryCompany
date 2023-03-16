@@ -159,6 +159,10 @@ nav ul li a {
     font-weight: 700;
 }
 
+nav ul li a:hover{
+    color: #999;
+}
+
 
 
 
@@ -329,13 +333,6 @@ nav ul li a:visited:not(:only-child):after {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #181313 -14.04%, rgba(18, 18, 18, 0) 95.78%);
-}
-
-.slide_title {
-    font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 60px;
-    color: #FFFFFF;
 }
 
 
@@ -1033,7 +1030,8 @@ nav ul li a:visited:not(:only-child):after {
     font-size: 4.375rem;
     margin-bottom: 100px;
     color: #92242A;
-
+    text-align: center;
+    padding: 1.5rem 0;
 }
 
 .sub_title {
@@ -1659,6 +1657,7 @@ ul.tabs li.current {
 
 .no_sugar {
     display: flex;
+    margin-top: 2rem;
 }
 
 .no_sugar_wrap {
@@ -1682,6 +1681,10 @@ ul.tabs li.current {
     margin-top: 2.5rem;
 }
 
+
+.timelilne_img_wrap{
+    margin-top: 9rem;
+}
 
 .history {
     width: 100%;
@@ -1708,6 +1711,9 @@ ul.tabs li.current {
     height: 100%;
 }
 
+.cupang img{
+    width: 180px;
+ }
 
 .commerce_timline .timeline_content {
     left: 14%;
