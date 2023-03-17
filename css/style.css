@@ -1610,6 +1610,14 @@ ul.tabs li.current {
 
 }
 
+.story_descript span{
+    display: block;
+}
+
+.story_descript br{
+    display: none;
+}
+
 /* commerce 장점*/
 
 .commerce_app .app_advantage {
@@ -1695,9 +1703,6 @@ ul.tabs li.current {
 }
 
 
-.no-sugar-wrap.app_advantage {
-    padding: 6.25rem 0;
-}
 
 .no_sugar {
     display: flex;
@@ -1875,16 +1880,14 @@ ul.tabs li.current {
     font-weight: 700;
     font-size: 18px;
     color: #92242A;
-    margin: 0.937rem 0;
+    margin: 0.937rem 0 0;
 }
 
 .media_date {
     font-weight: 400;
     font-size: 18px;
-    margin-left: 40px;
-    text-align: center;
     color: #888888;
-
+ margin-top: 37px;
 }
 
 .media_descript {
@@ -2382,6 +2385,7 @@ margin: 0 auto;
     .wrapp_inner {
         max-width: 768px;
         padding: 50px 20px;
+        box-sizing: border-box;
     }
 
 
@@ -3004,6 +3008,14 @@ margin: 0 auto;
         height: 322px!important;
     }
 
+    .timeline li.mobile-height5 {
+        height: 90px!important;
+    }
+
+    .timeline li.mobile-height6 {
+        height: 234px!important;
+    }
+
     .timeline li.max-height {
         height: 265px;
     }
@@ -3090,7 +3102,7 @@ margin: 0 auto;
 
 
 
-    .commerce_app,
+    /* .commerce_app,
     .news_wrap,
     .contact_wrap,
     .care .app_advantage,
@@ -3099,7 +3111,7 @@ margin: 0 auto;
     .story_content {
         padding: 0 20px!important;
         box-sizing: border-box;
-    }
+    } */
 
     .sub_wrap .sub_main_title,
     .sub_main_title {
@@ -3499,10 +3511,10 @@ letter-spacing: -0.02em;
     }
 
     .btn.contact_btn {
-        width: 128px;
-        height: 30px;
+        width: 149px;
+        height: 40px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .root_daum_roughmap {
@@ -3569,10 +3581,6 @@ letter-spacing: -0.02em;
     top: 16px;
     }
 
-    .no-sugar-wrap.app_advantage{
-        padding: 0;
-    }
-
     .no_sugar_wrap {
         margin-right: 28px;
     }
@@ -3592,7 +3600,12 @@ letter-spacing: -0.02em;
     }
 
     .commerce_timline .timeline::before {
-        left: 16%;
+        left: 20%;
+        height: calc(100% - 128px);
+    }
+
+    .commerce_timline .timeline_content{    
+        top: 4px;
     }
 
     .app_content li{
@@ -3634,8 +3647,8 @@ letter-spacing: -0.02em;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25%, auto));
         row-gap: 10px;
-        padding: 0 20px;
-        column-gap: 20px;
+        padding: 0 2px;
+    column-gap: 3px;
     }
 
 
@@ -3728,6 +3741,28 @@ letter-spacing: -0.02em;
     .last-timeline .timeline_content::before{
         left: 9%;
     }
+
+    .story_descript br{
+        display: block;
+    }
+
+    .story_descript span{
+        display: contents;
+    }
+
+    .commerce_timline{
+        flex-direction: column;
+    }
+
+    .timeline li.nomal-height {
+        height: 201px;
+    }
+
+    .media_date{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (min-width: 799px) {
