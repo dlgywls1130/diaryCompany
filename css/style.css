@@ -387,6 +387,15 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 
+.smart .slick-slide img{
+    object-fit: contain;
+}
+
+.smart .phone_slide_item{
+    width: 414px!important;
+    height: 848px!important;
+}
+
 /* middel-content */
 
 .background-color{
@@ -1096,17 +1105,21 @@ nav ul li a:visited:not(:only-child):after {
     color: #333333;
     margin-top: 2.5rem;
     line-height: 2.875rem;
+    margin-bottom: 100px;
 }
 
 
 /* 단하나의 건강 슈퍼앱 */
 .super-app {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
 }
 
+.super-app_content{
+    margin-left: 80px;
+}
 .super-app_title {
     font-weight: 700;
     font-size: 3.125rem;
@@ -1114,8 +1127,40 @@ nav ul li a:visited:not(:only-child):after {
     color: #000000;
 }
 
-.phone_img {
-    width: 440px;
+.phone_slide_item {
+    width: 400px;
+    height: 900px!important;
+
+}
+
+.phone_slide{
+    width: 410px;
+    height: 900px!important;
+    border-radius:70px;
+    overflow: hidden;
+}
+
+.phone_slide_item img{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+
+
+.phone_wrap{
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    height: 900px;
+}
+
+.phone-back{
+    background: url('../img/iphone.png') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 900px;
 }
 
@@ -1209,6 +1254,7 @@ nav ul li a:visited:not(:only-child):after {
 
 .app_advantage ul li {
     position: relative;
+    width: 50%;
 }
 
 .app_advantage ul li::before {
@@ -1578,7 +1624,7 @@ ul.tabs li.current {
 
 .story_content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .story_title {
@@ -1608,7 +1654,6 @@ ul.tabs li.current {
     font-size: 28px;
     line-height: 46px;
     color: #495057;
-
 }
 
 .story_descript span{
@@ -1617,6 +1662,10 @@ ul.tabs li.current {
 
 .story_descript br{
     display: none;
+}
+
+.care .story_title{
+    margin-right: 133px;
 }
 
 /* commerce 장점*/
@@ -1686,6 +1735,7 @@ ul.tabs li.current {
     font-size: 50px;
     color: #000000;
     position: relative;
+    margin-right: 270px;
 }
 
 .story_title.no-sugar span {
@@ -1708,6 +1758,7 @@ ul.tabs li.current {
 .no_sugar {
     display: flex;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .no_sugar_wrap {
@@ -1749,7 +1800,7 @@ ul.tabs li.current {
 .timeline_img {
     width: 400px;
     height: 250px;
-    margin-bottom: 130px;
+    margin-bottom: 69px;
 }
 
 .timeline_img:last-child {
@@ -3231,6 +3282,9 @@ margin: 0 auto;
         width: 100%;
     }
 
+    .app_advantage ul li{
+        width: 100%;
+    }
     .app_advantage ul li:first-child {
         padding: 20px 0 0;
     }
@@ -3431,6 +3485,7 @@ letter-spacing: -0.02em;
 
     .story_title {
         font-size: 20px;
+        margin-right: 0;
     }
 
     .story_descript {
@@ -3770,6 +3825,9 @@ letter-spacing: -0.02em;
         margin-bottom: 30px;
     }
 
+    .super-app_content{
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 799px) {

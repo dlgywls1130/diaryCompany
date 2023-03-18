@@ -14,7 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- slick js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                    
 </head>
 <body>
     <!-- header -->
@@ -94,9 +101,28 @@
 
             <!-- 단하나의 슈퍼앱 -->
             <div class="super-app">
-                <div class="phone_img">
-                    <img src="./img/img_phone1.png">
+                <div class="phone_wrap">
+                    <div class="phone_slide">
+                        <div class="phone_slide_item">
+                            <img src="./img/phone5.png">
+                        </div>
+                        <div class="phone_slide_item">
+                            <img src="./img/phone1.png">
+                        </div>
+                        <div class="phone_slide_item">
+                            <img src="./img/phone2.png">
+                        </div>
+                        <div class="phone_slide_item">
+                            <img src="./img/phone3.png">
+                        </div>
+                        <div class="phone_slide_item">
+                            <img src="./img/phone4.png">
+                        </div>
+                    </div>
+                    
+                    <div class="phone-back"></div>
                 </div>
+
                 
                 <div class="super-app_content">
                     <div class="super-app_title">
@@ -110,7 +136,6 @@
                         <Br>건강한 나의 힘을 찾아가는 여정이기에.
                         <Br>끊임없이 응원해주고 
                         <Br>앞으로 나아갈 수 있도록 
-                        <Br>우리가 함께 만들어나갑니다. 
                         <Br>우리가 함께 만들어나갑니다. 
 
                     </div>
@@ -276,8 +301,21 @@
                             <Br>다양한 통계들을 제공합니다. 
                         </div>
                     </div>
-                    <div class="smart_img">
-                        <img src="./img/img_phone3.png">
+                    <div class="phone_wrap">
+                        <div class="phone_slide">
+                            <div class="phone_slide_item">
+                                <img src="./img/phone6.png">
+                            </div>
+                            <div class="phone_slide_item">
+                                <img src="./img/phone7.png">
+                            </div>
+                            <div class="phone_slide_item">
+                                <img src="./img/phone8.png">
+                            </div>
+
+                        </div>
+                        
+                        <div class="phone-back"></div>
                     </div>
                 </div>
             </div>
@@ -370,5 +408,21 @@
     </footer>
 
     <script src="./js/main.js"></script>
+
+    <script>
+        // slick
+
+$(function(){
+    $('.phone_slide').slick({
+    infinite: true,
+    autoplay:true,
+    autoplaySpeed:3000,
+    arrows : false,
+    touchMove:true,
+    swipe : true,
+    draggable : true,
+    });
+});
+    </script>
 </body>
 </html>
