@@ -1176,6 +1176,8 @@ nav ul li a:visited:not(:only-child):after {
 
 
 
+
+
 .phone_descript {
     font-weight: 350;
     font-size: 1.75rem;
@@ -1238,6 +1240,7 @@ nav ul li a:visited:not(:only-child):after {
 /* 간편한 건강기록*/
 .app_img {
     margin-top: 5.688rem;
+    position: relative;
 }
 
 
@@ -1343,7 +1346,82 @@ nav ul li a:visited:not(:only-child):after {
     color: #92242A;
 }
 
+.mySwiper2.swiper{
+    width: 499px;
+    height: 615px;
+    overflow: hidden;
+}
 
+
+
+.mySwiper.swiper{
+    width: 910px!important;
+    height: 203px;
+}
+
+.mySwiper{
+    cursor: pointer;
+}
+
+.mySwiper2.swiper-slide{
+    border-radius: 20% 20% 0 0;
+    overflow: hidden;
+    width: 500px!important;
+}
+
+.mySwiper2 .swiper-slide{
+    height: 615px;
+    overflow: hidden;
+    border-radius: 20% 20% 0 0;
+}
+.mySwiper2 .swiper-slide img{
+    object-fit: cover;
+    width: 450px;
+    padding-left: 0.5rem;
+    border-radius: 10% 10% 0 0;
+}
+
+.swiper{
+    position: relative;
+}
+
+.app-phone-back{
+    background: url('../img/iphone1.png') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 615px;
+    z-index: 12;
+}
+
+.img_slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+}
+
+.swiper-slide-thumb-active .text-color{
+    color: #92242A;
+    font-weight: 500;
+}
+
+.text-color{
+color: #495057;
+font-family: 'Noto Sans KR',sans-serif;
+font-weight: 400;
+}
+
+
+
+.mySwiper {overflow: visible;}
+.mySwiper .swiper-slide {opacity:0.4; transition:opacity 0.3s;}
+.mySwiper .swiper-slide-active,
+.mySwiper .swiper-slide-active + .swiper-slide,
+.mySwiper .swiper-slide-active + .swiper-slide + .swiper-slide,
+.mySwiper .swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide {opacity:1}
 /* 스마트한 건강 통계 */
 
 .smart_sstatisstic {
@@ -3195,6 +3273,7 @@ margin: 0 auto;
         font-size: 16px;
         line-height: 24px;
         margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     .app_advantage ul {
@@ -3268,21 +3347,7 @@ margin: 0 auto;
         padding: 50px 0;
     }
 
-    .app {
-        width: 181px;
-        height: 221px;
-        margin: 0 auto;
-    }
 
-    .app img {
-        width: 100%;
-    }
-
-    .app_icon {
-        width: 25px;
-        height: 25px;
-        margin-bottom: 10px;
-    }
 
     .app_content li img {
         width: 100%;
@@ -3837,6 +3902,68 @@ letter-spacing: -0.02em;
 
     .super-app_content{
         margin-left: 0;
+    }
+
+
+    .mySwiper2.swiper {
+        width: 170px;
+        height: 221px;
+        overflow: hidden;
+    }
+
+    .mySwiper2 .swiper-slide {
+        height: 221px;
+        overflow: hidden;
+        border-radius: 20% 20% 0 0;
+    }
+
+    .mySwiper2 .swiper-slide img {
+        object-fit: cover;
+        width: 154px;
+        padding-left: 0.5rem;
+        border-radius: 10% 10% 0 0;
+    }
+
+    .app-phone-back {
+        background: url(../img/iphone1.png) no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 180px;
+        height: 221px;
+        z-index: 12;
+        background-size: contain;
+    }
+
+    .app {
+        width: 181px;
+        height: 221px;
+        margin: 0 auto;
+    }
+
+    
+    .app_icon {
+        width: 34px;
+        height: 52px;
+        margin-bottom: 10px;
+    }
+
+    .app_icon img {
+        width: 100%;
+    }
+
+    .img_slide{
+        width: 58px;
+    }
+
+    .mySwiper.swiper {
+        width: 300px!important;
+        height: 81px;
+        margin-top: 1rem;
+    }
+
+    .text-color{
+        font-size: 11px;
     }
 }
 

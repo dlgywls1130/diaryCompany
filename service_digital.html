@@ -16,12 +16,14 @@
 
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- slick js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
                     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -177,41 +179,98 @@
 
             
             <div class="app_img">
-                <div class="app">
-                    <img src="./img/img_phone2.png">
+
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slide6.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide6.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide4.png" />
+                        </div>
+                    </div>
+
+                    <div class="app-phone-back"></div>
                 </div>
-                <ul class="app_content mt-50">
-                    <li>
-                        <div class="app_icon">
-                            <img src="./img/icon_1.png">
+
+
+
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_1.png" />
+                                </div>
+                                <p class="text-color">식단</p>
+                            </div>
                         </div>
-                        <p class="text-color1">식단</p>
-                    </li>
-                    <li>
-                        <div class="app_icon">
-                            <img src="./img/icon_2.png">
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_2.png" />
+                                </div>
+                                <p class="text-color">체중</p>
+                            </div>
                         </div>
-                        <p class="text-color2">체중</p>
-                    </li>
-                    <li>
-                        <div class="app_icon">
-                            <img src="./img/icon_3.png">
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_3.png" />
+                                </div>
+                                <p class="text-color">혈당</p>
+                            </div>
                         </div>
-                        <p class="text-color3">혈당</p>
-                    </li>
-                    <li>
-                        <div class="app_icon">
-                            <img src="./img/icon_4.png">
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_4.png" />
+                                </div>
+                                <p class="text-color">혈압/심박수</p>
+                            </div>
                         </div>
-                        <p class="text-color2">혈압/심박수</p>
-                    </li>
-                    <li>
-                        <div class="app_icon">
-                            <img src="./img/icon_5.png">
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_5.png" />
+                                </div>
+                                <p class="text-color">약물</p>
+                            </div>
                         </div>
-                        <p class="text-color1">약물</p>
-                    </li>
-                </ul>
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_6.png" />
+                                </div>
+                                <p class="text-color">케톤</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_7.png" />
+                                </div>
+                                <p class="text-color">운동</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </div>
@@ -412,17 +471,50 @@
     <script>
         // slick
 
-$(function(){
-    $('.phone_slide').slick({
-    infinite: true,
-    autoplay:true,
-    autoplaySpeed:3000,
-    arrows : false,
-    touchMove:true,
-    swipe : true,
-    draggable : true,
+    $(function(){
+        $('.phone_slide').slick({
+        infinite: true,
+        autoplay:true,
+        autoplaySpeed:3000,
+        arrows : false,
+        touchMove:true,
+        swipe : true,
+        draggable : true,
+        });
     });
-});
+
+    // 
+
+
+    var swiper = new Swiper(".mySwiper", {
+        // loop: true,
+        // loopAdditionalSlides: 1,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        mousewheel: true,
+        grabCursor: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        // loop: true,
+        // loopAdditionalSlides: 1,
+        slidesPerView: 1,
+        thumbs: {
+            swiper: swiper,
+        },
+        spaceBetween: 10,
+        centeredSlides: true,
+        roundLengths: true,
+        // pagination: {
+        //     el:'.mySwiper',
+        //     clickable: true,
+        // },
+    });
+
+    // $('.swiper-pagination-bullet').hover(function () {
+    //     $(this).trigger("click");
+    // });
     </script>
 </body>
 </html>
