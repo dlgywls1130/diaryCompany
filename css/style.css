@@ -612,30 +612,6 @@ nav ul li a:visited:not(:only-child):after {
     right: -0.687rem;
 } */
 
-.one-tab input[type="checkbox"].hide-input:checked+.toggle-el {
-    min-height: 0;
-    height: 0;
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-input.hide-input {
-    position: absolute;
-    left: -999em;
-}
-
-label.toggle {
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    color: hsl(0, 0%, 14%);
-    background: hsl(0, 0%, 71%);
-    border-radius: 3px;
-    user-select: none;
-}
 
 .tabcontent {
     padding: 0px 12px;
@@ -652,6 +628,15 @@ label.toggle {
     text-align: left;
 }
 
+
+.one-tab .solution{
+    display: none;
+}
+
+
+.one-tab .tablinks.active .solution{
+    display: block;
+}
 
 /* service */
 
