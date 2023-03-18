@@ -1357,6 +1357,7 @@ nav ul li a:visited:not(:only-child):after {
 .mySwiper.swiper{
     width: 910px!important;
     height: 203px;
+    margin-top: 3rem;
 }
 
 .mySwiper{
