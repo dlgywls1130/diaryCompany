@@ -456,9 +456,9 @@
                     <span>내일 더 건강한</span> 나를<br> 만나보세요.
                 </div>
                 <div class="btn-container">
-                    <button type="button" class="btn submit-btn">
+                    <a href="https://drdiary-home.onelink.me/Bwaw/qm8mwiuj" target="_blank" class="btn submit-btn">
                         닥터다이어리 시작하기
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -503,16 +503,26 @@
 
     var swiper = new Swiper(".mySwiper", {
         loop: true,
-        loopAdditionalSlides: 2,
+        // loopAdditionalSlides: 2,
         spaceBetween: 10,
         slidesPerView: 4,
-        freeMode: true,
+        // freeMode: true,
         mousewheel: true,
-        grabCursor: true,
+        // grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        breakpoints:{
+            768:{
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            1024: {
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+            spaceBetween: 10,
+            },
+        }
     });
     var swiper2 = new Swiper(".mySwiper2", {
         loop: true,
