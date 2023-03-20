@@ -1242,8 +1242,9 @@ nav ul li a:visited:not(:only-child):after {
 
 /* 간편한 건강기록*/
 .app_img {
-    margin-top: 5.688rem;
     position: relative;
+    width: 1000px;
+    margin: 5.688rem auto 0;
 }
 
 
@@ -1257,6 +1258,10 @@ nav ul li a:visited:not(:only-child):after {
 .app_advantage ul {
     display: flex;
     justify-content: space-between;
+}
+
+.app_advantage ul li:first-child{
+    margin-right: 1rem;
 }
 
 .advantage_title {
@@ -1361,6 +1366,7 @@ nav ul li a:visited:not(:only-child):after {
     width: 910px !important;
     height: 203px;
     margin-top: 3rem;
+    margin-left: 5rem;
 }
 
 .mySwiper {
@@ -1435,6 +1441,33 @@ nav ul li a:visited:not(:only-child):after {
 .mySwiper .swiper-slide-active+.swiper-slide+.swiper-slide,
 .mySwiper .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide {
     opacity: 1
+}
+
+.swiper_button_wrap{
+
+}
+
+
+
+.swiper-button-next{
+    
+}
+
+.swiper-button-prev{
+
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top: unset!important;
+    bottom: 10%;
+}
+
+.swiper-button-next:after{
+    content: url('../img/slide_btn.png')!important;
+}
+
+.swiper-button-prev:after{
+    content: url('../img/slide_btn_left.png')!important;
 }
 
 /* 스마트한 건강 통계 */
@@ -2345,7 +2378,6 @@ ul.tabs li.current {
 
 .mmodal_p {
     width: 240px;
-    height: 223.01px;
     background: #FCFCFC;
     border: 1px solid #DDDDDD;
     border-radius: 10px;
@@ -4017,7 +4049,7 @@ ul.tabs li.current {
 
     .super-app .phone_slide {
         width: 114px !important;
-        height: 248px !important;
+        height: 254px !important;
         margin: 0 auto;
         border-radius: 5%;
     }
@@ -4049,6 +4081,29 @@ ul.tabs li.current {
     .smart .phone-back{
         width: 197px;
         height: 379px;
+    }
+
+    .gluet_start p{
+        font-size: 14px;
+    }
+
+    .img2{
+        width: 80px;
+        height: 80px;
+    }
+
+    .gluet_effect li:first-child p {
+        margin-top: 21px;
+    }
+
+    .modal_effect.gluet_effect li {
+        width: 193px;
+        height: 161px;
+        margin-right: 0.5rem;
+    }
+
+    .modal_effect.gluet_effect li:last-child {
+        margin-right: 0;
     }
 }
 

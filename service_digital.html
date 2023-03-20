@@ -269,7 +269,22 @@
                             </div>
                         </div>
                     </div>
+
+
+                  
+
                 </div>
+
+                  <!-- <div class="swiper_button_wrap"> -->
+                    <div class="swiper-button-next">
+                        <!-- <img src="./img/slide_btn_left.png"> -->
+                    </div>
+                    <div class="swiper-button-prev">
+                        <!-- <img src="./img/slide_btn.png"> -->
+                    </div>
+                <!-- </div> -->
+
+
                 
 
             </div>
@@ -475,7 +490,7 @@
         $('.phone_slide').slick({
         infinite: true,
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:2000,
         arrows : false,
         touchMove:true,
         swipe : true,
@@ -487,18 +502,21 @@
 
 
     var swiper = new Swiper(".mySwiper", {
-        // loop: true,
-        // loopAdditionalSlides: 1,
+        loop: true,
+        loopAdditionalSlides: 2,
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
-        watchSlidesProgress: true,
         mousewheel: true,
         grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
     var swiper2 = new Swiper(".mySwiper2", {
-        // loop: true,
-        // loopAdditionalSlides: 1,
+        loop: true,
+        loopAdditionalSlides: 1,
         slidesPerView: 1,
         thumbs: {
             swiper: swiper,
