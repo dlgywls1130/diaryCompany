@@ -78,18 +78,18 @@
 
 
         <div class="contact_wrap mt-100 mobile_mt-50">
-            <div class="contact_select">
+            <!-- <div class="contact_select">
                 <select class="ddl-select" id="list" name="list">
                     <option data-display="문의 내용 선택">문의 내용 선택</option>
                     <option value="1">기업 제휴 및 협업</option>
                     <option value="2">닥다몰 입점 문의</option>
                     <option value="3">기업용 EAP 프로그램 문의</option>
                 </select>
-            </div>
+            </div> -->
             <div class="contact_input">
                 <label class="input_info"><input type="text" placeholder="성함"></label>
-                <label class="input_info"><input type="text" placeholder="회사"></label>
-                <label class="input_info"><input type="text" placeholder="직급"></label>
+                <label class="input_info"><input type="email" placeholder="이메일"></label>
+                <label class="input_info"><input type="text" placeholder="제목"></label>
                 <textarea placeholder="내용"></textarea>
 
                 <div class="button_contain mt-100 mobile_mt-24">
@@ -178,9 +178,9 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-            $('select').niceSelect();
-        });
+        // $(document).ready(function() {
+        //     $('select').niceSelect();
+        // });
     </script>
 </body>
 </html>

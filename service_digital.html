@@ -189,7 +189,7 @@
                             <img src="./img/slide6.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/slide1.png" />
+                            <img src="./img/slide7.png" />
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/slide2.png" />
@@ -197,6 +197,10 @@
                         <div class="swiper-slide">
                             <img src="./img/slide5.png" />
                         </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slide1.png" />
+                        </div>
+                        
                         <div class="swiper-slide">
                             <img src="./img/slide3.png" />
                         </div>
@@ -250,6 +254,14 @@
                                     <img src="./img/icon_5.png" />
                                 </div>
                                 <p class="text-color">약물</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_slide">
+                                <div class="app_icon">
+                                    <img src="./img/icon_14.png" />
+                                </div>
+                                <p class="text-color">당화혈색소</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -503,7 +515,7 @@
 
     var swiper = new Swiper(".mySwiper", {
         loop: true,
-        // loopAdditionalSlides: 2,
+        loopAdditionalSlides: 4,
         spaceBetween: 10,
         slidesPerView: 4,
         // freeMode: true,
@@ -519,7 +531,7 @@
                 spaceBetween: 10
             },
             1024: {
-            slidesPerView: 3,  //브라우저가 1024보다 클 때
+            slidesPerView: 5,  //브라우저가 1024보다 클 때
             spaceBetween: 10,
             },
         }
@@ -534,15 +546,7 @@
         spaceBetween: 10,
         centeredSlides: true,
         roundLengths: true,
-        // pagination: {
-        //     el:'.mySwiper',
-        //     clickable: true,
-        // },
     });
-
-    // $('.swiper-pagination-bullet').hover(function () {
-    //     $(this).trigger("click");
-    // });
     </script>
 </body>
 </html>

@@ -959,6 +959,10 @@ nav ul li a:visited:not(:only-child):after {
     align-items: center;
 }
 
+.logo_padding{
+    padding-top: 0.8rem;
+}
+
 /* .partner_img li {
     margin-right: 97px;
 } */
@@ -1266,7 +1270,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 .app_advantage ul li:first-child{
-    margin-right: 1rem;
+    margin-right: 90px;
 }
 
 .advantage_title {
@@ -2112,6 +2116,7 @@ ul.tabs li.current {
 .contact_wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact_input {
@@ -2329,7 +2334,7 @@ ul.tabs li.current {
 
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    margin: 30px 0 58px;
     justify-content: center;
 }
 
@@ -2536,7 +2541,25 @@ ul.tabs li.current {
 
 /*====반응형======*/
 
+@media (min-width:272px) and (max-width: 359px){
+    .digital .main_title::after {
+        right: 10%!important;
+    }
 
+    .program .main_title::after {
+        right: 15%!important;
+    }
+} 
+
+@media (min-width:390px) and (max-width: 420px){
+    .digital .main_title::after {
+        right: 18%!important;
+    }
+
+    .program .main_title::after {
+        right: 22%!important;
+    }
+} 
 
 @media only screen and (max-width: 768px) {
 
@@ -2599,6 +2622,9 @@ ul.tabs li.current {
         box-sizing: border-box;
     }
 
+    .timeline_history.wrapp_inner{
+        padding: 50px 20px 0;
+    }
 
     .navigation {
         height: 60px;
@@ -2965,7 +2991,8 @@ ul.tabs li.current {
         width: 100%;
         display: flex;
         margin-top: 35px;
-        overflow: auto;
+        flex-wrap: wrap;
+        justify-content: center;
         -ms-overflow-style: none;
         position: relative;
         height: 100px;
@@ -2992,7 +3019,7 @@ ul.tabs li.current {
 
     .one-tab .tablinks.active .solution {
         position: absolute;
-        top: 12px;
+        top: 61px;
         left: 50%;
         width: 100%;
         z-index: 1;
@@ -3000,9 +3027,14 @@ ul.tabs li.current {
         float: left;
         text-align: center;
         transform: translate(-50%, 0);
-
+        font-size: 14px;
+        line-height: 22px;
     }
 
+    .one-tab button:nth-child(5),
+    .one-tab button:nth-child(6){
+        margin-top: -0.8rem;
+    }
 
     .solution {
         display: none;
@@ -3507,7 +3539,7 @@ ul.tabs li.current {
 
     .digital .main_title::after {
         bottom: 7px;
-        right: 18%;
+        right: 14%;
     }
 
     .img_wrap {
@@ -3852,7 +3884,7 @@ ul.tabs li.current {
 
     .program .main_title::after {
         bottom: 5px;
-        right: 20%;
+        right: 17%;
     }
 
     .tab_main_title {
@@ -3914,12 +3946,23 @@ ul.tabs li.current {
     .modal_descript {
         font-size: 12px;
         line-height: 20px;
-        margin: 15px 0 20px;
+        margin: 15px 0 35px;
+    }
+
+    .gluet_effect {
+        margin-bottom: 36px;
     }
 
     .modal_arrow {
         margin: 24px 0;
         transform: rotate(90deg);
+    }
+
+    .modal_gluet_ul li p{
+        width: 45px;
+        height: 46px;
+        font-weight: 400;
+        font-size: 12px;
     }
 
     .modal_effect li {
@@ -3936,11 +3979,29 @@ ul.tabs li.current {
         margin-right: 0;
     }
 
+    .modal_gluet_ul li p:last-child{
+        margin-right: 0;
+    }
     .modal_gluet_ul {
-        flex-direction: column;
-        background: url('../img/vertival_line.png') no-repeat;
-        background-position-x: 45%;
-        background-position-y: 113%;
+        margin-bottom: 50px;
+        align-items: flex-start;
+        margin-top: 30px;
+        background-position: 0 30%;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .modal_gluet_ul li .program_step{
+        font-size: 10px;
+    }
+
+    .modal_gluet_ul li{
+        margin-top: 0;
+        margin-right: 28px;
+    }
+
+    .modal_gluet_ul li:last-child{
+        margin-right: 0;
     }
 
     .p_wrap:last-child br {
@@ -4176,6 +4237,14 @@ line-height: 150%;
     align-items: center;
     justify-content: center;
     width: 100%;
+    }
+
+    .footer_logo{
+        width: 90px;
+    }
+
+    .footer_logo img{
+        width: 100%;
     }
 }
 
