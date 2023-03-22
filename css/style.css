@@ -755,7 +755,12 @@ nav ul li a:visited:not(:only-child):after {
     top: 26px;
 }
 
-
+.timeline_line{
+    background: url(../img/timeline1.png);
+    z-index: 1;
+    position: sticky;
+    height: 100%;
+}
 
 .timeline .timeline_year h2 {
     font-weight: 400;
@@ -3071,13 +3076,23 @@ ul.tabs li.current {
 
     .one-tab {
         width: 100%;
-        display: flex;
         margin-top: 35px;
         flex-wrap: wrap;
-        justify-content: center;
-        -ms-overflow-style: none;
         position: relative;
         height: 100px;
+    }
+
+    .button_tab_wrap{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28%, auto));
+        row-gap: 0;
+        padding: 0 2px;
+        column-gap: 3px;
+        justify-items: center;
+    }
+    
+    .button_tab_wrap:first-child{
+        margin-bottom: 1rem;
     }
 
     .one-tab button {
@@ -3113,10 +3128,10 @@ ul.tabs li.current {
         line-height: 22px;
     }
 
-    .one-tab button:nth-child(5),
+    /* .one-tab button:nth-child(5),
     .one-tab button:nth-child(6){
         margin-top: -0.8rem;
-    }
+    } */
 
     .solution {
         display: none;
@@ -3536,10 +3551,12 @@ ul.tabs li.current {
         line-height: unset;
         font-size: 30px;
         margin-top: 10px;
+        margin-bottom: 0;
     }
 
     .now_wrap .history_start p {
         font-size: 16px;
+        margin-top: 10px;
     }
 
     .now_wrap .history_start li:first-child,
@@ -3548,6 +3565,14 @@ ul.tabs li.current {
         padding: 0;
     }
 
+    .now_wrap ul li{
+        margin-bottom: 30px;
+    }
+
+    
+    .now_wrap ul li:last-child{
+        margin-bottom: 0;
+    }
 
 
     .app_content li img {
@@ -3842,6 +3867,9 @@ ul.tabs li.current {
         font-size: 14px;
         line-height: 20px;
         margin-top: 5px;
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     }
 
     .contact_input {
@@ -3949,6 +3977,7 @@ ul.tabs li.current {
     .commerce_timline .timeline::before {
         left: 65.48px;
         height: calc(100% - 125px);
+        
     }
 
     .commerce_timline .timeline_content {
@@ -4349,6 +4378,7 @@ line-height: 150%;
         row-gap: 10px;
         padding: 0 2px;
         column-gap: 3px;
+        justify-items: center;
     }
     .tablinks.active .text-color{
         font-size: 10px;
