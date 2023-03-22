@@ -1051,6 +1051,15 @@ nav ul li a:visited:not(:only-child):after {
     justify-content: center;
 }
 
+.app_download_wrap{
+    display: flex;
+    margin-top: 30px;
+}
+
+.app_download_wrap a:first-child{
+    margin-right: 8px;
+}
+
 
 /* footer */
 
@@ -4432,6 +4441,18 @@ line-height: 150%;
 
     .timeline_img_pc{
         display: none;
+    }
+
+    .app_download_wrap a{
+        width: 65px;
+    }
+
+    .app_download_wrap a img{
+        width: 100%;
+    }
+
+    .app_download_wrap{
+        margin-top: 13px;
     }
 }
 
