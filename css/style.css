@@ -4444,7 +4444,7 @@ line-height: 150%;
     }
 
     .app_download_wrap a{
-        width: 69px;
+        width: 50%;
     }
 
     .app_download_wrap a img{
@@ -4453,6 +4453,7 @@ line-height: 150%;
 
     .app_download_wrap{
         margin-top: 13px;
+        width: 150px;
     }
 }
 
