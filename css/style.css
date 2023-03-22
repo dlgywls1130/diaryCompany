@@ -3083,12 +3083,9 @@ ul.tabs li.current {
     }
 
     .button_tab_wrap{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28%, auto));
-        row-gap: 0;
-        padding: 0 2px;
-        column-gap: 3px;
-        justify-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .button_tab_wrap:first-child{
