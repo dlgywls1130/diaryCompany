@@ -640,6 +640,8 @@ nav ul li a:visited:not(:only-child):after {
 
 }
 
+
+
 /* service */
 
 .service {
@@ -974,6 +976,14 @@ nav ul li a:visited:not(:only-child):after {
 
 .partner_img img:last-child {
     margin-right: 0;
+}
+
+#tab2 .timeline_img_pc:last-child{
+    margin-left: 50%;
+}
+
+.timeline_mobile{
+    display: none;
 }
 
 
@@ -4409,6 +4419,19 @@ line-height: 150%;
     .app_tab_img .on-tab-content img {
         border-radius: 45px;
         width: 100%;
+    }
+
+    #tab2 .timeline_img_pc:last-child{
+        margin-left: 0;
+    }
+    
+    .timeline_mobile{
+        display: block;
+        margin-bottom: 45px;
+    }
+
+    .timeline_img_pc{
+        display: none;
     }
 }
 
