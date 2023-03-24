@@ -26,14 +26,16 @@
 
 
 // Make home slowly fade to transparent as the window scrolls down
-const home = document.querySelector('.main');
-const homeHeight = home.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-    home.style.opacity = 1 - window.scrollY / homeHeight;
-});
+// const home = document.querySelector('.main');
+// const homeHeight = home.getBoundingClientRect().height;
+// document.addEventListener('scroll', () => {
+//     home.style.display = 1 - window.scrollY / homeHeight;
+// });
 
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.scroll_btn');
+const home = document.querySelector('.main');
+const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     if (window.scrollY > homeHeight / 2) {
         arrowUp.classList.add('visible');
